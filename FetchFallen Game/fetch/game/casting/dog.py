@@ -4,10 +4,10 @@ from game.casting.point import Point
 
 
 class Dog(Actor):
-    """A implement used to draw the dog in the game."""
+    """A implement used to draw the super jelly in the game."""
     
     def __init__(self, body, animation, debug = False):
-        """Constructs a new dog.
+        """Constructs super jelly.
         
         Args:Args:
             body: A new instance of Body.
@@ -18,7 +18,7 @@ class Dog(Actor):
         self._animation = animation
 
     def get_animation(self):
-        """Gets the dog's animation.
+        """Gets super jelly animation.
         
         Returns:
             An instance of Animation.
@@ -26,7 +26,7 @@ class Dog(Actor):
         return self._animation
 
     def get_body(self):
-        """Gets the dog's body.
+        """Gets super jelly body.
         
         Returns:
             An instance of Body.
@@ -34,33 +34,33 @@ class Dog(Actor):
         return self._body
 
     def move_next(self):
-        """Moves the dog using its velocity."""
+        """Moves super jelly using its velocity."""
         position = self._body.get_position()
         velocity = self._body.get_velocity()
         new_position = position.add(velocity)
         self._body.set_position(new_position)
 
     def swing_up(self):
-        """Steers the dog up."""
+        """Steers super jelly up."""
         velocity = Point(0, -DOG_VELOCITY)
         self._body.set_velocity(velocity)
         
     def swing_down(self):
-        """Steers the dog down."""
+        """Steers super jelly down."""
         velocity = Point(0, DOG_VELOCITY)
         self._body.set_velocity(velocity)
 
     def swing_left(self):
-        """Steers the dog to the left."""
+        """Steers super jelly to the left."""
         velocity = Point(-DOG_VELOCITY, 0)
         self._body.set_velocity(velocity)
         
     def swing_right(self):
-        """Steers the dog to the right."""
+        """Steers super jelly to the right."""
         velocity = Point(DOG_VELOCITY, 0)
         self._body.set_velocity(velocity)
     
     def stop_moving(self):
-        """Stops the dog from moving."""
+        """Stops super jelly from moving."""
         velocity = Point(0, 0)
         self._body.set_velocity(velocity)

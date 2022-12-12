@@ -4,10 +4,10 @@ from game.casting.point import Point
 
 
 class DogSad(Actor):
-    """A implement used to draw a sad dog animation in the game."""
+    """A implement used to draw a sad animation in the game."""
     
     def __init__(self, body, animation, debug = False):
-        """Constructs a dog.
+        """Constructs a sadness.
         
         Args:Args:
             body: A new instance of Body.

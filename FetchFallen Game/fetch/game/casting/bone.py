@@ -26,15 +26,15 @@ class Bone(Actor):
         self._order = order
 
         self._type_of_bone = type_of_bone
-        # BONE
+        # Buko
         if type_of_bone == 0:
             self._animation = Animation(BONE_IMAGES, RATE_ITEMS)
             self.set_points(BONE_POINTS)
-        # BONE WITH MEAT
+        # Banana
         elif type_of_bone == 1:
             self._animation = Animation(BONE_MEAT_IMAGES, RATE_ITEMS)
             self.set_points(BONE_MEAT_POINTS)
-        # DYNAMITE
+        # Lightning
         elif type_of_bone == 2:
             self._animation = Animation(DYNAMITE_IMAGE, RATE_ITEMS)
             self.set_points(DYNAMITE_POINTS)

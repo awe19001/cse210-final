@@ -25,7 +25,7 @@ class CollideBoneAction(Action):
                 points = bone.get_points()
                 stats.add_points(points)
 
-                # DYNAMITE
+                # Lightning
                 if bone.get_type() == 2:  
                     stats.lose_life()
                 

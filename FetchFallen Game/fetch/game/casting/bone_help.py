@@ -23,13 +23,13 @@ class BoneHelp(Actor):
         self._body = body
 
         self._type_of_bone = type_of_bone
-        # BONE
+        # Buko
         if type_of_bone == 2:
             self._animation = Animation(BONE_IMAGES, RATE_ITEMS_HELP)
-        # BONE WITH MEAT
+        # Banana
         elif type_of_bone == 1:
             self._animation = Animation(BONE_MEAT_IMAGES, RATE_ITEMS_HELP)
-        # DYNAMITE
+        # Lightning
         elif type_of_bone == 3:
             self._animation = Animation(DYNAMITE_IMAGE, RATE_ITEMS_HELP)
 
