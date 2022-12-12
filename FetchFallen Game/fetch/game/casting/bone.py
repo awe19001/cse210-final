@@ -11,12 +11,12 @@ class Bone(Actor):
     """A solid, object that move around in the game."""
 
     def __init__(self, body, order, type_of_bone=0, debug = False):
-        """Constructs a new Bone.
+        """Constructs a new buko.
 
         Args:
             body: A new instance of Body.
-            order: Bone order.
-            type_of_bone: It's the type of the bone.
+            order: Buko order.
+            type_of_buko: It's the type of the buko.
             animation: A new instance of Animation.
         """
         super().__init__(debug)

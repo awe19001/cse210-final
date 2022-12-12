@@ -11,12 +11,12 @@ class BoneHelp(Actor):
     """A solid, object that is draw in the help menu."""
 
     def __init__(self, body, type_of_bone=0, debug = False):
-        """Constructs a new Bone.
+        """Constructs a new Buko.
 
         Args:
             animation: A new instance of Animation.
             body: A new instance of Body.
-            type_of_bone: It's the type of the bone.
+            type_of_buko: It's the type of the bone.
         """
         super().__init__(debug)
         self._animation = 0
@@ -50,7 +50,7 @@ class BoneHelp(Actor):
 
 
     def get_body(self):
-        """Gets the bone's body.
+        """Gets the buko.
 
         Returns:
             An instance of Body.

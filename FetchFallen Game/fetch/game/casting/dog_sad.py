@@ -18,7 +18,7 @@ class DogSad(Actor):
         self._animation = animation 
 
     def get_animation(self):
-        """Gets the bat's animation.
+        """Gets the  animation.
         
         Returns:
             An instance of Animation.
